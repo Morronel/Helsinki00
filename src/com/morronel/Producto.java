@@ -2,9 +2,9 @@ package com.morronel;
 
 public class Producto {
 
-    String name;
-    double price;
-    int amount;
+    private String name;
+    private double price;
+    private int amount;
 
     public Producto(String nameAtStart, double priceAtStart, int amountAtStart){
         name = nameAtStart;
@@ -13,18 +13,6 @@ public class Producto {
     }
 
     public void printProducto(){
-        System.out.println(getName() + ", price " + getPrice() + ", amount " + getAmount());
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public int getAmount() {
-        return amount;
+        System.out.println(name + ", price " + price + ", amount " + amount);
     }
 }
