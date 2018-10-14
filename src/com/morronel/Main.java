@@ -17,5 +17,8 @@ public class Main {
         System.out.println(mattProfile.balance());
         System.out.println(myProfile.balance());
         banana.printProducto();
+
+        Multiplier multiplier = new Multiplier(2);
+        System.out.println(multiplier.multiply(5));
     }
 }
