@@ -15,6 +15,9 @@ public class Menu {
     }
 
     public void printMeals(){
-        System.out.println(meals);
+        for (String meal : meals) {
+            int position = meals.indexOf(meal) + 1;
+            System.out.println("MEAL #" + position + " - " + meal);
+        }
     }
 }
