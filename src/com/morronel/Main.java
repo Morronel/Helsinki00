@@ -37,16 +37,16 @@ public class Main {
 
         cardPekka.payGourmet();
         cardBrian.payEconomical();
-        System.out.println(cardPekka);
-        System.out.println(cardBrian);
+        System.out.println("Pekkas " + cardPekka);
+        System.out.println("Brians " + cardBrian);
         cardPekka.loadMoney(20);
         cardBrian.payGourmet();
-        System.out.println(cardPekka);
-        System.out.println(cardBrian);
+        System.out.println("Pekkas " + cardPekka);
+        System.out.println("Brians " + cardBrian);
         cardPekka.payEconomical();
         cardPekka.payEconomical();
         cardBrian.loadMoney(50);
-        System.out.println(cardPekka);
-        System.out.println(cardBrian);
+        System.out.println("Pekkas " + cardPekka);
+        System.out.println("Brians " + cardBrian);
     }
 }
