@@ -32,11 +32,12 @@ public class Main {
         menu.addMeal("kal");
         menu.printMeals();
 
-        LyyraCard card = new LyyraCard(50);
+        LyyraCard card = new LyyraCard(5);
         System.out.println(card);
         card.payEconomical();
         System.out.println(card);
         card.payGourmet();
         System.out.println(card);
+
     }
 }
