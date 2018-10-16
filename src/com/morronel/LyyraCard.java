@@ -3,9 +3,11 @@ package com.morronel;
 public class LyyraCard {
 
     private double balance;
+    private String name;
 
     public LyyraCard(double balanceAtStart) {
         this.balance = balanceAtStart;
+        this.name = name;
     }
 
     public void payEconomical() {
@@ -27,7 +29,7 @@ public class LyyraCard {
     }
 
     public String toString() {
-        return "The card has " + balance + " euros";
+        return this.name + " has " + balance + " euros";
     }
 
 }
