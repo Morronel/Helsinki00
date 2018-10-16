@@ -31,5 +31,8 @@ public class Main {
         Menu menu = new Menu(list);
         menu.addMeal("kal");
         menu.printMeals();
+
+        LyyraCard card = new LyyraCard(50);
+        System.out.println(card);
     }
 }
