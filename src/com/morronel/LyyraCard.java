@@ -20,6 +20,12 @@ public class LyyraCard {
         }
     }
 
+    public void loadMoney(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
     public String toString() {
         return "The card has " + balance + " euros";
     }
