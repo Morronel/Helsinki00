@@ -9,8 +9,16 @@ public class MyNode<T> {
         data = t;
     }
 
-    public void setNextNode() {
+    public void setNextNode(MyNode<T> nextNode) {
+        this.nextNode = nextNode;
+    }
 
+    public MyNode<T> getNextNode() {
+        return nextNode;
+    }
+
+    public T getData() {
+        return data;
     }
 
 }

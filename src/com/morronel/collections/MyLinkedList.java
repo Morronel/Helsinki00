@@ -4,6 +4,7 @@ public class MyLinkedList<T> implements MyList<T> {
 
     private int size;
     private MyNode<T> lastNode;
+    private MyNode<T> firstNode;
 
     public MyLinkedList() {
         size = 0;
@@ -12,13 +13,24 @@ public class MyLinkedList<T> implements MyList<T> {
     @Override
     public void add(T t) {
         MyNode<T> newNode = new MyNode<T>(t);
-
+        if (size == 0) {
+            firstNode = newNode;
+            lastNode = newNode;
+        }
+        lastNode.setNextNode(newNode);
         size++;
     }
 
     @Override
     public T get(int index) {
-        return null;
+
+        MyNode<T> currentNode = firstNode;
+
+        for (int i = 0; i <= index; i++) {
+            currentNode = currentNode.getNextNode();
+        }
+
+        return currentNode.getData();
     }
 
     @Override
