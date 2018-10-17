@@ -2,9 +2,18 @@ package com.morronel.collections;
 
 public class MyLinkedList<T> implements MyList<T> {
 
+    private int size;
+    private MyNode<T> lastNode;
+
+    public MyLinkedList() {
+        size = 0;
+    }
+
     @Override
     public void add(T t) {
+        MyNode<T> newNode = new MyNode<T>(t);
 
+        size++;
     }
 
     @Override
@@ -19,11 +28,12 @@ public class MyLinkedList<T> implements MyList<T> {
 
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
+
 }
