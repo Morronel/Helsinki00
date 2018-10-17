@@ -36,6 +36,15 @@ public class MyLinkedList<T> implements MyList<T> {
     @Override
     public void remove(int index) {
 
+        MyNode<T> currentNode = firstNode;
+        MyNode<T> nextNode;
+
+        for (int i = 0; i < index; i++) {
+            currentNode = currentNode.getNextNode();
+        }
+
+        nextNode = currentNode.getNextNode().getNextNode();
+        currentNode.setNextNode(nextNode);
     }
 
     @Override
