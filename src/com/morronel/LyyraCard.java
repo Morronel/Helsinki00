@@ -8,16 +8,18 @@ public class LyyraCard {
         balance = balanceAtStart;
     }
 
-    public void payEconomical() {
-        if (balance - 2.50 >= 0) {
-            balance -= 2.50;
+    public boolean pay(double amount){
+        if (balance - amount >= 0) {
+            this.balance -= amount;
+            return true;
+        }
+        else {
+            return false;
         }
     }
 
-    public void payGourmet() {
-        if (balance - 4.00 >= 0) {
-            balance -= 4.00;
-        }
+    public double balance() {
+        return this.balance;
     }
 
     public void loadMoney(double amount) {
