@@ -19,4 +19,14 @@ public class Apartment {
             return false;
         }
     }
+
+    public int priceDifference(Apartment otherApartment) {
+        int diff = this.pricePerSquareMeter * this.squareMeters - otherApartment.squareMeters * otherApartment.pricePerSquareMeter;
+        if (diff >= 0) {
+            return diff;
+        }
+        else {
+            return diff * -1;
+        }
+    }
 }
