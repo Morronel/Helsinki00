@@ -33,6 +33,28 @@ public class CashRegister {
         }
     }
 
+    public boolean payEconomical(LyyraCard card) {
+        double price = 2.50;
+        if (card.pay(price)) {
+            economicalSold++;
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean payGourmet(LyyraCard card) {
+        double price = 4;
+        if (card.pay(price)) {
+            gourmetSold++;
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public String toString() {
         return "money in register "+cashInRegister+" economical lunches sold: "+economicalSold+" gourmet lunches sold: "+gourmetSold;
     }
