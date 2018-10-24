@@ -26,8 +26,7 @@ public class Main {
         }
 
         for (int j = 0; j < i; j++) {
-            Student studento = list.get(j);
-            System.out.println(studento);
+            System.out.println(list.get(j));
         }
     }
 }
