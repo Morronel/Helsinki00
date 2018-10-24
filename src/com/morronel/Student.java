@@ -1,8 +1,8 @@
 package com.morronel;
 
 public class Student {
-    String name;
-    String studentNumber;
+    private String name;
+    private String studentNumber;
 
     public String getName() {
         return name;

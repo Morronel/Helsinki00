@@ -11,6 +11,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String newName;
         String newNumber;
+        String searchTerm;
         int i = 0;
 
         System.out.println("name: ");
@@ -25,8 +26,17 @@ public class Main {
             newName = scanner.nextLine();
         }
 
-        for (int j = 0; j < i; j++) {
-            System.out.println(list.get(j));
+        for (Student student : list){
+            System.out.println(student);
+        }
+
+        System.out.println("Give search termino: ");
+        searchTerm = scanner.nextLine();
+
+        for (Student student : list){
+            if (student.getName().contains(searchTerm)){
+                System.out.println(student);
+            }
         }
     }
 }
