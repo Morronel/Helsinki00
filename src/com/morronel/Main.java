@@ -26,7 +26,8 @@ public class Main {
         }
 
         for (int j = 0; j < i; j++) {
-            System.out.println(list.get(j).getName() + " (" + list.get(j).getStudentNumber() + ")");
+            Student studento = list.get(j);
+            System.out.println(studento);
         }
     }
 }
